@@ -34,6 +34,7 @@ public class ApplicationConstants {
 	public static final String OPERATION_WELCOME		= "/welcome";
 	public static final String OPERATION_USER			= "/user";
 	public static final String OPERATION_ROLES			= "/roles";
+	public static final String OPERATION_ADDRESS		= "/address";
 	
 	public static final String OPERATION_TEST			="/test";
 	

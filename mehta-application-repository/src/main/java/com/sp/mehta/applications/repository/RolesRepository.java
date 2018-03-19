@@ -13,4 +13,5 @@ public interface RolesRepository extends CrudRepository<Roles, Integer> {
 	
 	@Query("SELECT R.role FROM Roles R where R.user.id=?1")
 	public List<String> findAllRolesByUserId(Integer userId);
+	
 }

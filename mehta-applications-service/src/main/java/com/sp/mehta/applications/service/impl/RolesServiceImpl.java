@@ -27,9 +27,12 @@ public class RolesServiceImpl implements RolesService    {
 		if(rolesVo!=null){
 			Roles roles = new Roles();
 			User user = null;
-			if(rolesVo.getUserId()!=null)
+			if(rolesVo.getUserId()!=null) {
 				user = userRepository.findOne(rolesVo.getUserId());
-			roles.setUser(user);
+				if(user!=null)
+					roles.setUser(user);
+			}
+			
 			roles.setRole(rolesVo.getRole());
 			roles.setActive(rolesVo.getActive());
 			roles = rolesRepository.save(roles);
