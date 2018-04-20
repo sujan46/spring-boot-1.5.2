@@ -1,8 +1,0 @@
-node_modules
-bower_components
-build_docs
-.tmp
-.idea
-src/dashboard.styles.css
-build
-dist

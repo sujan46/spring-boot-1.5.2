@@ -26,7 +26,7 @@
         </encoder>
     </appender>
 
-	<logger name="com.sp.mehta" level="info" additivity="false">
+	<logger name="com.mehta" level="info" additivity="false">
 		<!-- <appender-ref ref="FILE-AUDIT" /> -->
 		<appender-ref ref="STDOUT" />
 	</logger>
