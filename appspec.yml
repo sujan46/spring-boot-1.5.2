@@ -1,20 +1,28 @@
-version: 0.0
+--- 
+files: 
+  - 
+    destination: /var/www/html
+    source: /var/lib/jenkins/workspace/First_Job2/mehta-applications-common/target/*.war
+  - 
+    destination: /var/www/html
+    source: /var/lib/jenkins/workspace/First_Job2/mehta-applications-model/target/*.war
+  - 
+    destination: /var/www/html
+    source: /var/lib/jenkins/workspace/First_Job2/mehta-applications-repository/target/*.war
+  - 
+    destination: /var/www/html
+    source: /var/lib/jenkins/workspace/First_Job2/mehta-applications-services/target/*.war
+  - 
+    destination: /var/www/html
+    source: /var/lib/jenkins/workspace/First_Job2/mehta-applications-web/target/*.war
+  - 
+    destination: /var/www/html
+    source: /var/lib/jenkins/workspace/First_Job2/mehta-applications-security/target/*.war
+  - 
+    destination: /var/www/html
+    source: /var/lib/jenkins/workspace/First_Job2/mehta-applications-social/target/*.war
+  - 
+    destination: /var/www/html
+    source: /var/lib/jenkins/workspace/First_Job2/mehta-applications/target/*.war
 os: linux
-files:
-  - source: /var/lib/jenkins/workspace/First_Job2/mehta-applications-common/target/*.war
-    destination: /var/www/html
-  - source: /var/lib/jenkins/workspace/First_Job2/mehta-applications-model/target/*.war
-    destination: /var/www/html
-  - source: /var/lib/jenkins/workspace/First_Job2/mehta-applications-repository/target/*.war
-    destination: /var/www/html
-  - source: /var/lib/jenkins/workspace/First_Job2/mehta-applications-services/target/*.war
-    destination: /var/www/html
-  - source: /var/lib/jenkins/workspace/First_Job2/mehta-applications-web/target/*.war
-    destination: /var/www/html
-``- source: /var/lib/jenkins/workspace/First_Job2/mehta-applications-security/target/*.war
-    destination: /var/www/html
-  - source: /var/lib/jenkins/workspace/First_Job2/mehta-applications-social/target/*.war
-    destination: /var/www/html
-  - source: /var/lib/jenkins/workspace/First_Job2/mehta-applications/target/*.war
-    destination: /var/www/html
-    
+version: 0.0
